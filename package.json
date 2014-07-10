@@ -6,8 +6,7 @@
   "keywords": [
     "css",
     "oocss",
-    "",
-    ""
+    "border-colors"
   ],
   "css-border-colors": {
     "type": "git",
