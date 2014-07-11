@@ -162,7 +162,7 @@ or download the css on github and include in your project.
 .bor--gainsboro {        border-color: $gainsboro; }
 
 
-@include break(not-small) {
+@media screen and (min-width: 48em) {
   .bor--blk-ns {      border-color: $near-black; }
   .bor--dk-gry-ns {   border-color: $dark-gray; }
   .bor--md-gry-ns {   border-color: $mid-gray; }
@@ -178,7 +178,7 @@ or download the css on github and include in your project.
   .bor--hotpink-ns {          border-color: $hotpink; }
   .bor--deeppink-ns {         border-color: $deeppink; }
   .bor--palevioletred-ns {    border-color: $palevioletred; }
-  .bor--mediumvioletred-ns {  border-color: $mediumvioletred; }
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .bor--lightsalmon-ns {      border-color: $lightsalmon; }
   .bor--salmon-ns {           border-color: $salmon; }
   .bor--darksalmon-ns {       border-color: $darksalmon; }
@@ -450,7 +450,7 @@ or download the css on github and include in your project.
   .bor--gainsboro-m {        border-color: $gainsboro; }
 }
 
-@include break(large) {
+@media screen and (min-width: 64em)  {
   .bor--blk-l {      border-color: $near-black; }
   .bor--dk-gry-l {   border-color: $dark-gray; }
   .bor--md-gry-l {   border-color: $mid-gray; }
