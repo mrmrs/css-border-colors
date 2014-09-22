@@ -20,7 +20,8 @@ View on [npm](https://www.npmjs.org/package/css-border-colors)
 ## File Size
 
 31K border-colors.css
-31K border-colors.scss
+31K border-colors.scss 
+1minified and gzipped
 
 ## The Code
 ```
