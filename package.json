@@ -1,5 +1,6 @@
 {
   "name": "css-border-colors",
+  "style": "border-colors.css",
   "version": "0.0.5",
   "homepage": "http://github.com/mrmrs/css-border-colors",
   "description": "Css module of single purpose classes for border colors",
