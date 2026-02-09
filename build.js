@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { transform } = require('lightningcss');
 
-const srcFile = path.join(__dirname, 'src', 'css-border-colors.css');
+const srcFile = path.join(__dirname, 'src', 'border-colors.css');
 const distDir = path.join(__dirname, 'dist');
 
 // Read source
@@ -15,22 +15,22 @@ if (!fs.existsSync(distDir)) {
 
 // Unminified — just normalize formatting
 const { code: unminified } = transform({
-  filename: 'css-border-colors.css',
+  filename: 'border-colors.css',
   code: Buffer.from(source),
   minify: false,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-border-colors.css'), unminified);
+fs.writeFileSync(path.join(distDir, 'border-colors.css'), unminified);
 
 // Minified
 const { code: minified } = transform({
-  filename: 'css-border-colors.css',
+  filename: 'border-colors.css',
   code: Buffer.from(source),
   minify: true,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-border-colors.min.css'), minified);
+fs.writeFileSync(path.join(distDir, 'border-colors.min.css'), minified);
 
 console.log('Build complete:');
-console.log(`  dist/css-border-colors.css     ${unminified.length} bytes`);
-console.log(`  dist/css-border-colors.min.css ${minified.length} bytes`);
+console.log(`  dist/border-colors.css     ${unminified.length} bytes`);
+console.log(`  dist/border-colors.min.css ${minified.length} bytes`);
