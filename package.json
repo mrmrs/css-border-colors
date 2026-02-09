@@ -1,38 +1,44 @@
 {
   "name": "css-border-colors",
-  "style": "border-colors.css",
-  "version": "1.0.8",
-  "homepage": "http://github.com/mrmrs/css-border-colors",
-  "description": "Css module of single purpose classes for border colors",
+  "version": "2.0.0",
+  "description": "Functional CSS for border-colors",
+  "style": "dist/border-colors.css",
+  "main": "dist/border-colors.css",
+  "exports": {
+    ".": "./dist/border-colors.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "border-colors"
+    "border-colors",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-border-colors": {
+  "homepage": "https://github.com/mrmrs/css-border-colors",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-border-colors.git"
+    "url": "https://github.com/mrmrs/css-border-colors.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-border-colors/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-border-colors/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
