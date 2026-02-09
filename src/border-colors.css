@@ -145,7 +145,7 @@
 .bor--gainsboro {        border-color: $gainsboro; }
 
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .bor--blk-s {      border-color: $near-black; }
   .bor--dk-gry-s {   border-color: $dark-gray; }
   .bor--md-gry-s {   border-color: $mid-gray; }
@@ -289,7 +289,7 @@
   .bor--gainsboro-s {        border-color: $gainsboro; }
 }
 
-@media screen and (min-width:48em) and (max-width: 64em) {
+@media screen and (min-width:48em) {
   .bor--blk-m {      border-color: $near-black; }
   .bor--dk-gry-m {   border-color: $dark-gray; }
   .bor--md-gry-m {   border-color: $mid-gray; }
@@ -433,7 +433,7 @@
   .bor--gainsboro-m {        border-color: $gainsboro; }
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 96em) {
   .bor--blk-l {      border-color: $near-black; }
   .bor--dk-gry-l {   border-color: $dark-gray; }
   .bor--md-gry-l {   border-color: $mid-gray; }
