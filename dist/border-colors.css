@@ -1,2245 +1,2387 @@
+:root {
+  --near-black: #111;
+  --dark-gray: #333;
+  --mid-gray: #555;
+  --gray: #777;
+  --silver: #999;
+  --light-silver: #aaa;
+  --light-gray: #ccc;
+  --near-white: #f4f4f4;
+  --white: #fff;
+  --pink: pink;
+  --lightpink: #ffb6c1;
+  --hotpink: #ff69b4;
+  --deeppink: #ff1493;
+  --palevioletred: #db7093;
+  --mediumvioletred: #c71585;
+  --lightsalmon: #ffa07a;
+  --salmon: salmon;
+  --darksalmon: #e9967a;
+  --lightcoral: #f08080;
+  --indianred: #cd5c5c;
+  --crimson: #dc143c;
+  --firebrick: #b22222;
+  --darkred: #8b0000;
+  --red: red;
+  --orangered: #ff4500;
+  --tomato: tomato;
+  --coral: coral;
+  --darkorange: #ff8c00;
+  --orange: orange;
+  --gold: gold;
+  --yellow: #ff0;
+  --lightyellow: #ffffe0;
+  --lemonchiffon: #fffacd;
+  --lightgoldenrodyellow: #fafad2;
+  --papayawhip: #ffefd5;
+  --moccasin: #ffe4b5;
+  --peachpuff: #ffdab9;
+  --palegoldenrod: #eee8aa;
+  --khaki: khaki;
+  --darkkhaki: #bdb76b;
+  --cornsilk: #fff8dc;
+  --blanchedalmond: #ffebcd;
+  --bisque: bisque;
+  --navajowhite: #ffdead;
+  --wheat: wheat;
+  --burlywood: #deb887;
+  --tan: tan;
+  --rosybrown: #bc8f8f;
+  --sandybrown: #f4a460;
+  --goldenrod: #daa520;
+  --darkgoldenrod: #b8860b;
+  --peru: peru;
+  --chocolate: #d2691e;
+  --saddlebrown: #8b4513;
+  --sienna: sienna;
+  --brown: brown;
+  --maroon: maroon;
+  --darkolivegreen: #556b2f;
+  --olive: olive;
+  --olivedrab: #6b8e23;
+  --yellowgreen: #9acd32;
+  --limegreen: #32cd32;
+  --lime: #0f0;
+  --lawngreen: #7cfc00;
+  --chartreuse: #7fff00;
+  --greenyellow: #adff2f;
+  --springgreen: #00ff7f;
+  --mediumspringgreen: #00fa9a;
+  --lightgreen: #90ee90;
+  --palegreen: #98fb98;
+  --darkseagreen: #8fbc8f;
+  --mediumseagreen: #3cb371;
+  --seagreen: #2e8b57;
+  --forestgreen: #228b22;
+  --green: green;
+  --darkgreen: #006400;
+  --mediumaquamarine: #66cdaa;
+  --aqua: #0ff;
+  --cyan: #0ff;
+  --lightcyan: #e0ffff;
+  --paleturquoise: #afeeee;
+  --aquamarine: #7fffd4;
+  --turquoise: #40e0d0;
+  --mediumturquoise: #48d1cc;
+  --darkturquoise: #00ced1;
+  --lightseagreen: #20b2aa;
+  --cadetblue: #5f9ea0;
+  --darkcyan: #008b8b;
+  --teal: teal;
+  --lightsteelblue: #b0c4de;
+  --powderblue: #b0e0e6;
+  --lightblue: #add8e6;
+  --skyblue: #87ceeb;
+  --lightskyblue: #87cefa;
+  --deepskyblue: #00bfff;
+  --dodgerblue: #1e90ff;
+  --cornflowerblue: #6495ed;
+  --steelblue: #4682b4;
+  --royalblue: #4169e1;
+  --blue: #00f;
+  --mediumblue: #0000cd;
+  --darkblue: #00008b;
+  --navy: navy;
+  --midnightblue: #191970;
+  --lavender: #e6e6fa;
+  --thistle: #d8bfd8;
+  --plum: plum;
+  --violet: violet;
+  --orchid: orchid;
+  --fuchsia: #f0f;
+  --magenta: #f0f;
+  --mediumorchid: #ba55d3;
+  --mediumpurple: #9370db;
+  --blueviolet: #8a2be2;
+  --darkviolet: #9400d3;
+  --darkorchid: #9932cc;
+  --darkmagenta: #8b008b;
+  --purple: purple;
+  --indigo: indigo;
+  --darkslateblue: #483d8b;
+  --slateblue: #6a5acd;
+  --mediumslateblue: #7b68ee;
+  --snow: snow;
+  --honeydew: #f0fff0;
+  --mintcream: #f5fffa;
+  --azure: azure;
+  --aliceblue: #f0f8ff;
+  --ghostwhite: #f8f8ff;
+  --whitesmoke: #f5f5f5;
+  --seashell: #fff5ee;
+  --beige: beige;
+  --oldlace: #fdf5e6;
+  --floralwhite: #fffaf0;
+  --ivory: ivory;
+  --antiquewhite: #faebd7;
+  --linen: linen;
+  --lavenderblush: #fff0f5;
+  --mistyrose: #ffe4e1;
+  --gainsboro: #dcdcdc;
+}
+
 .bor--blk {
-  border-color: $near-black;
+  border-color: var(--near-black);
 }
 
 .bor--dk-gry {
-  border-color: $dark-gray;
+  border-color: var(--dark-gray);
 }
 
 .bor--md-gry {
-  border-color: $mid-gray;
+  border-color: var(--mid-gray);
 }
 
 .bor--gray {
-  border-color: $gray;
+  border-color: var(--gray);
 }
 
 .bor--silver {
-  border-color: $silver;
+  border-color: var(--silver);
 }
 
 .bor--lt-slvr {
-  border-color: $light-silver;
+  border-color: var(--light-silver);
 }
 
 .bor--lt-gry {
-  border-color: $light-gray;
+  border-color: var(--light-gray);
 }
 
 .bor--near-wht {
-  border-color: $near-white;
+  border-color: var(--near-white);
 }
 
 .bor--wht {
-  border-color: $white;
+  border-color: var(--white);
 }
 
 .bor--pink {
-  border-color: $pink;
+  border-color: var(--pink);
 }
 
 .bor--lightpink {
-  border-color: $lightpink;
+  border-color: var(--lightpink);
 }
 
 .bor--hotpink {
-  border-color: $hotpink;
+  border-color: var(--hotpink);
 }
 
 .bor--deeppink {
-  border-color: $deeppink;
+  border-color: var(--deeppink);
 }
 
 .bor--palevioletred {
-  border-color: $palevioletred;
+  border-color: var(--palevioletred);
 }
 
 .bor--mediumvioletred {
-  border-color: $mediumvioletred;
+  border-color: var(--mediumvioletred);
 }
 
 .bor--lightsalmon {
-  border-color: $lightsalmon;
+  border-color: var(--lightsalmon);
 }
 
 .bor--salmon {
-  border-color: $salmon;
+  border-color: var(--salmon);
 }
 
 .bor--darksalmon {
-  border-color: $darksalmon;
+  border-color: var(--darksalmon);
 }
 
 .bor--lightcoral {
-  border-color: $lightcoral;
+  border-color: var(--lightcoral);
 }
 
 .bor--indianred {
-  border-color: $indianred;
+  border-color: var(--indianred);
 }
 
 .bor--crimson {
-  border-color: $crimson;
+  border-color: var(--crimson);
 }
 
 .bor--firebrick {
-  border-color: $firebrick;
+  border-color: var(--firebrick);
 }
 
 .bor--darkred {
-  border-color: $darkred;
+  border-color: var(--darkred);
 }
 
 .bor--red {
-  border-color: $red;
+  border-color: var(--red);
 }
 
 .bor--orangered {
-  border-color: $orangered;
+  border-color: var(--orangered);
 }
 
 .bor--tomato {
-  border-color: $tomato;
+  border-color: var(--tomato);
 }
 
 .bor--coral {
-  border-color: $coral;
+  border-color: var(--coral);
 }
 
 .bor--darkorange {
-  border-color: $darkorange;
+  border-color: var(--darkorange);
 }
 
 .bor--orange {
-  border-color: $orange;
+  border-color: var(--orange);
 }
 
 .bor--gold {
-  border-color: $gold;
+  border-color: var(--gold);
 }
 
 .bor--yellow {
-  border-color: $yellow;
+  border-color: var(--yellow);
 }
 
 .bor--lightyellow {
-  border-color: $lightyellow;
+  border-color: var(--lightyellow);
 }
 
 .bor--lemonchiffon {
-  border-color: $lemonchiffon;
+  border-color: var(--lemonchiffon);
 }
 
 .bor--lightgoldenrod {
-  border-color: $lightgoldenrodyellow;
+  border-color: var(--lightgoldenrodyellow);
 }
 
 .bor--papayawhip {
-  border-color: $papayawhip;
+  border-color: var(--papayawhip);
 }
 
 .bor--moccasin {
-  border-color: $moccasin;
+  border-color: var(--moccasin);
 }
 
 .bor--peachpuff {
-  border-color: $peachpuff;
+  border-color: var(--peachpuff);
 }
 
 .bor--palegoldenrod {
-  border-color: $palegoldenrod;
+  border-color: var(--palegoldenrod);
 }
 
 .bor--khaki {
-  border-color: $khaki;
+  border-color: var(--khaki);
 }
 
 .bor--darkkhaki {
-  border-color: $darkkhaki;
+  border-color: var(--darkkhaki);
 }
 
 .bor--cornsilk {
-  border-color: $cornsilk;
+  border-color: var(--cornsilk);
 }
 
 .bor--blanchedalmond {
-  border-color: $blanchedalmond;
+  border-color: var(--blanchedalmond);
 }
 
 .bor--bisque {
-  border-color: $bisque;
+  border-color: var(--bisque);
 }
 
 .bor--navajowhite {
-  border-color: $navajowhite;
+  border-color: var(--navajowhite);
 }
 
 .bor--wheat {
-  border-color: $wheat;
+  border-color: var(--wheat);
 }
 
 .bor--burlywood {
-  border-color: $burlywood;
+  border-color: var(--burlywood);
 }
 
 .bor--tan {
-  border-color: $tan;
+  border-color: var(--tan);
 }
 
 .bor--rosybrown {
-  border-color: $rosybrown;
+  border-color: var(--rosybrown);
 }
 
 .bor--sandybrown {
-  border-color: $sandybrown;
+  border-color: var(--sandybrown);
 }
 
 .bor--goldenrod {
-  border-color: $goldenrod;
+  border-color: var(--goldenrod);
 }
 
 .bor--darkgoldenrod {
-  border-color: $darkgoldenrod;
+  border-color: var(--darkgoldenrod);
 }
 
 .bor--peru {
-  border-color: $peru;
+  border-color: var(--peru);
 }
 
 .bor--chocolate {
-  border-color: $chocolate;
+  border-color: var(--chocolate);
 }
 
 .bor--saddlebrown {
-  border-color: $saddlebrown;
+  border-color: var(--saddlebrown);
 }
 
 .bor--sienna {
-  border-color: $sienna;
+  border-color: var(--sienna);
 }
 
 .bor--brown {
-  border-color: $brown;
+  border-color: var(--brown);
 }
 
 .bor--maroon {
-  border-color: $maroon;
+  border-color: var(--maroon);
 }
 
 .bor--darkolivegreen {
-  border-color: $darkolivegreen;
+  border-color: var(--darkolivegreen);
 }
 
 .bor--olive {
-  border-color: $olive;
+  border-color: var(--olive);
 }
 
 .bor--olivedrab {
-  border-color: $olivedrab;
+  border-color: var(--olivedrab);
 }
 
 .bor--yellowgreen {
-  border-color: $yellowgreen;
+  border-color: var(--yellowgreen);
 }
 
 .bor--limegreen {
-  border-color: $limegreen;
+  border-color: var(--limegreen);
 }
 
 .bor--lime {
-  border-color: $lime;
+  border-color: var(--lime);
 }
 
 .bor--lawngreen {
-  border-color: $lawngreen;
+  border-color: var(--lawngreen);
 }
 
 .bor--chartreuse {
-  border-color: $chartreuse;
+  border-color: var(--chartreuse);
 }
 
 .bor--greenyellow {
-  border-color: $greenyellow;
+  border-color: var(--greenyellow);
 }
 
 .bor--springgreen {
-  border-color: $springgreen;
+  border-color: var(--springgreen);
 }
 
 .bor--medpringgreen {
-  border-color: $mediumspringgreen;
+  border-color: var(--mediumspringgreen);
 }
 
 .bor--lightgreen {
-  border-color: $lightgreen;
+  border-color: var(--lightgreen);
 }
 
 .bor--palegreen {
-  border-color: $palegreen;
+  border-color: var(--palegreen);
 }
 
 .bor--darkseagreen {
-  border-color: $darkseagreen;
+  border-color: var(--darkseagreen);
 }
 
 .bor--mediumseagreen {
-  border-color: $mediumseagreen;
+  border-color: var(--mediumseagreen);
 }
 
 .bor--seagreen {
-  border-color: $seagreen;
+  border-color: var(--seagreen);
 }
 
 .bor--forestgreen {
-  border-color: $forestgreen;
+  border-color: var(--forestgreen);
 }
 
 .bor--green {
-  border-color: $green;
+  border-color: var(--green);
 }
 
 .bor--darkgreen {
-  border-color: $darkgreen;
+  border-color: var(--darkgreen);
 }
 
 .bor--mediumaquamarine {
-  border-color: $mediumaquamarine;
+  border-color: var(--mediumaquamarine);
 }
 
 .bor--aqua {
-  border-color: $aqua;
+  border-color: var(--aqua);
 }
 
 .bor--cyan {
-  border-color: $cyan;
+  border-color: var(--cyan);
 }
 
 .bor--lightcyan {
-  border-color: $lightcyan;
+  border-color: var(--lightcyan);
 }
 
 .bor--paleturquoise {
-  border-color: $paleturquoise;
+  border-color: var(--paleturquoise);
 }
 
 .bor--aquamarine {
-  border-color: $aquamarine;
+  border-color: var(--aquamarine);
 }
 
 .bor--turquoise {
-  border-color: $turquoise;
+  border-color: var(--turquoise);
 }
 
 .bor--mediumturquoise {
-  border-color: $mediumturquoise;
+  border-color: var(--mediumturquoise);
 }
 
 .bor--darkturquoise {
-  border-color: $darkturquoise;
+  border-color: var(--darkturquoise);
 }
 
 .bor--lightseagreen {
-  border-color: $lightseagreen;
+  border-color: var(--lightseagreen);
 }
 
 .bor--cadetblue {
-  border-color: $cadetblue;
+  border-color: var(--cadetblue);
 }
 
 .bor--darkcyan {
-  border-color: $darkcyan;
+  border-color: var(--darkcyan);
 }
 
 .bor--teal {
-  border-color: $teal;
+  border-color: var(--teal);
 }
 
 .bor--lightsteelblue {
-  border-color: $lightsteelblue;
+  border-color: var(--lightsteelblue);
 }
 
 .bor--powderblue {
-  border-color: $powderblue;
+  border-color: var(--powderblue);
 }
 
 .bor--lightblue {
-  border-color: $lightblue;
+  border-color: var(--lightblue);
 }
 
 .bor--skyblue {
-  border-color: $skyblue;
+  border-color: var(--skyblue);
 }
 
 .bor--lightskyblue {
-  border-color: $lightskyblue;
+  border-color: var(--lightskyblue);
 }
 
 .bor--deepskyblue {
-  border-color: $deepskyblue;
+  border-color: var(--deepskyblue);
 }
 
 .bor--dodgerblue {
-  border-color: $dodgerblue;
+  border-color: var(--dodgerblue);
 }
 
 .bor--cornflowerblue {
-  border-color: $cornflowerblue;
+  border-color: var(--cornflowerblue);
 }
 
 .bor--steelblue {
-  border-color: $steelblue;
+  border-color: var(--steelblue);
 }
 
 .bor--royalblue {
-  border-color: $royalblue;
+  border-color: var(--royalblue);
 }
 
 .bor--blue {
-  border-color: $blue;
+  border-color: var(--blue);
 }
 
 .bor--mediumblue {
-  border-color: $mediumblue;
+  border-color: var(--mediumblue);
 }
 
 .bor--darkblue {
-  border-color: $darkblue;
+  border-color: var(--darkblue);
 }
 
 .bor--navy {
-  border-color: $navy;
+  border-color: var(--navy);
 }
 
 .bor--midnightblue {
-  border-color: $midnightblue;
+  border-color: var(--midnightblue);
 }
 
 .bor--lavender {
-  border-color: $lavender;
+  border-color: var(--lavender);
 }
 
 .bor--thistle {
-  border-color: $thistle;
+  border-color: var(--thistle);
 }
 
 .bor--plum {
-  border-color: $plum;
+  border-color: var(--plum);
 }
 
 .bor--violet {
-  border-color: $violet;
+  border-color: var(--violet);
 }
 
 .bor--orchid {
-  border-color: $orchid;
+  border-color: var(--orchid);
 }
 
 .bor--fuchsia {
-  border-color: $fuchsia;
+  border-color: var(--fuchsia);
 }
 
 .bor--magenta {
-  border-color: $magenta;
+  border-color: var(--magenta);
 }
 
 .bor--mediumorchid {
-  border-color: $mediumorchid;
+  border-color: var(--mediumorchid);
 }
 
 .bor--mediumpurple {
-  border-color: $mediumpurple;
+  border-color: var(--mediumpurple);
 }
 
 .bor--blueviolet {
-  border-color: $blueviolet;
+  border-color: var(--blueviolet);
 }
 
 .bor--darkviolet {
-  border-color: $darkviolet;
+  border-color: var(--darkviolet);
 }
 
 .bor--darkorchid {
-  border-color: $darkorchid;
+  border-color: var(--darkorchid);
 }
 
 .bor--darkmagenta {
-  border-color: $darkmagenta;
+  border-color: var(--darkmagenta);
 }
 
 .bor--purple {
-  border-color: $purple;
+  border-color: var(--purple);
 }
 
 .bor--indigo {
-  border-color: $indigo;
+  border-color: var(--indigo);
 }
 
 .bor--darkslateblue {
-  border-color: $darkslateblue;
+  border-color: var(--darkslateblue);
 }
 
 .bor--slateblue {
-  border-color: $slateblue;
+  border-color: var(--slateblue);
 }
 
 .bor--mediumslateblue {
-  border-color: $mediumslateblue;
+  border-color: var(--mediumslateblue);
 }
 
 .bor--white {
-  border-color: $white;
+  border-color: var(--white);
 }
 
 .bor--snow {
-  border-color: $snow;
+  border-color: var(--snow);
 }
 
 .bor--honeydew {
-  border-color: $honeydew;
+  border-color: var(--honeydew);
 }
 
 .bor--mintcream {
-  border-color: $mintcream;
+  border-color: var(--mintcream);
 }
 
 .bor--azure {
-  border-color: $azure;
+  border-color: var(--azure);
 }
 
 .bor--aliceblue {
-  border-color: $aliceblue;
+  border-color: var(--aliceblue);
 }
 
 .bor--ghostwhite {
-  border-color: $ghostwhite;
+  border-color: var(--ghostwhite);
 }
 
 .bor--whitesmoke {
-  border-color: $whitesmoke;
+  border-color: var(--whitesmoke);
 }
 
 .bor--seashell {
-  border-color: $seashell;
+  border-color: var(--seashell);
 }
 
 .bor--beige {
-  border-color: $beige;
+  border-color: var(--beige);
 }
 
 .bor--oldlace {
-  border-color: $oldlace;
+  border-color: var(--oldlace);
 }
 
 .bor--floralwhite {
-  border-color: $floralwhite;
+  border-color: var(--floralwhite);
 }
 
 .bor--ivory {
-  border-color: $ivory;
+  border-color: var(--ivory);
 }
 
 .bor--antiquewhite {
-  border-color: $antiquewhite;
+  border-color: var(--antiquewhite);
 }
 
 .bor--linen {
-  border-color: $linen;
+  border-color: var(--linen);
 }
 
 .bor--lavenderblush {
-  border-color: $lavenderblush;
+  border-color: var(--lavenderblush);
 }
 
 .bor--mistyrose {
-  border-color: $mistyrose;
+  border-color: var(--mistyrose);
 }
 
 .bor--gainsboro {
-  border-color: $gainsboro;
+  border-color: var(--gainsboro);
 }
 
 @media screen and (width >= 32em) {
   .bor--blk-s {
-    border-color: $near-black;
+    border-color: var(--near-black);
   }
 
   .bor--dk-gry-s {
-    border-color: $dark-gray;
+    border-color: var(--dark-gray);
   }
 
   .bor--md-gry-s {
-    border-color: $mid-gray;
+    border-color: var(--mid-gray);
   }
 
   .bor--gray-s {
-    border-color: $gray;
+    border-color: var(--gray);
   }
 
   .bor--silver-s {
-    border-color: $silver;
+    border-color: var(--silver);
   }
 
   .bor--lt-slvr-s {
-    border-color: $light-silver;
+    border-color: var(--light-silver);
   }
 
   .bor--lt-gry-s {
-    border-color: $light-gray;
+    border-color: var(--light-gray);
   }
 
   .bor--near-wht-s {
-    border-color: $near-white;
+    border-color: var(--near-white);
   }
 
   .bor--wht-s {
-    border-color: $white;
+    border-color: var(--white);
   }
 
   .bor--pink-s {
-    border-color: $pink;
+    border-color: var(--pink);
   }
 
   .bor--lightpink-s {
-    border-color: $lightpink;
+    border-color: var(--lightpink);
   }
 
   .bor--hotpink-s {
-    border-color: $hotpink;
+    border-color: var(--hotpink);
   }
 
   .bor--deeppink-s {
-    border-color: $deeppink;
+    border-color: var(--deeppink);
   }
 
   .bor--palevioletred-s {
-    border-color: $palevioletred;
+    border-color: var(--palevioletred);
   }
 
   .bor--mediumvioletred-s {
-    border-color: $mediumvioletred;
+    border-color: var(--mediumvioletred);
   }
 
   .bor--lightsalmon-s {
-    border-color: $lightsalmon;
+    border-color: var(--lightsalmon);
   }
 
   .bor--salmon-s {
-    border-color: $salmon;
+    border-color: var(--salmon);
   }
 
   .bor--darksalmon-s {
-    border-color: $darksalmon;
+    border-color: var(--darksalmon);
   }
 
   .bor--lightcoral-s {
-    border-color: $lightcoral;
+    border-color: var(--lightcoral);
   }
 
   .bor--indianred-s {
-    border-color: $indianred;
+    border-color: var(--indianred);
   }
 
   .bor--crimson-s {
-    border-color: $crimson;
+    border-color: var(--crimson);
   }
 
   .bor--firebrick-s {
-    border-color: $firebrick;
+    border-color: var(--firebrick);
   }
 
   .bor--darkred-s {
-    border-color: $darkred;
+    border-color: var(--darkred);
   }
 
   .bor--red-s {
-    border-color: $red;
+    border-color: var(--red);
   }
 
   .bor--orangered-s {
-    border-color: $orangered;
+    border-color: var(--orangered);
   }
 
   .bor--tomato-s {
-    border-color: $tomato;
+    border-color: var(--tomato);
   }
 
   .bor--coral-s {
-    border-color: $coral;
+    border-color: var(--coral);
   }
 
   .bor--darkorange-s {
-    border-color: $darkorange;
+    border-color: var(--darkorange);
   }
 
   .bor--orange-s {
-    border-color: $orange;
+    border-color: var(--orange);
   }
 
   .bor--gold-s {
-    border-color: $gold;
+    border-color: var(--gold);
   }
 
   .bor--yellow-s {
-    border-color: $yellow;
+    border-color: var(--yellow);
   }
 
   .bor--lightyellow-s {
-    border-color: $lightyellow;
+    border-color: var(--lightyellow);
   }
 
   .bor--lemonchiffon-s {
-    border-color: $lemonchiffon;
+    border-color: var(--lemonchiffon);
   }
 
   .bor--lightgoldenrod-s {
-    border-color: $lightgoldenrodyellow;
+    border-color: var(--lightgoldenrodyellow);
   }
 
   .bor--papayawhip-s {
-    border-color: $papayawhip;
+    border-color: var(--papayawhip);
   }
 
   .bor--moccasin-s {
-    border-color: $moccasin;
+    border-color: var(--moccasin);
   }
 
   .bor--peachpuff-s {
-    border-color: $peachpuff;
+    border-color: var(--peachpuff);
   }
 
   .bor--palegoldenrod-s {
-    border-color: $palegoldenrod;
+    border-color: var(--palegoldenrod);
   }
 
   .bor--khaki-s {
-    border-color: $khaki;
+    border-color: var(--khaki);
   }
 
   .bor--darkkhaki-s {
-    border-color: $darkkhaki;
+    border-color: var(--darkkhaki);
   }
 
   .bor--cornsilk-s {
-    border-color: $cornsilk;
+    border-color: var(--cornsilk);
   }
 
   .bor--blanchedalmond-s {
-    border-color: $blanchedalmond;
+    border-color: var(--blanchedalmond);
   }
 
   .bor--bisque-s {
-    border-color: $bisque;
+    border-color: var(--bisque);
   }
 
   .bor--navajowhite-s {
-    border-color: $navajowhite;
+    border-color: var(--navajowhite);
   }
 
   .bor--wheat-s {
-    border-color: $wheat;
+    border-color: var(--wheat);
   }
 
   .bor--burlywood-s {
-    border-color: $burlywood;
+    border-color: var(--burlywood);
   }
 
   .bor--tan-s {
-    border-color: $tan;
+    border-color: var(--tan);
   }
 
   .bor--rosybrown-s {
-    border-color: $rosybrown;
+    border-color: var(--rosybrown);
   }
 
   .bor--sandybrown-s {
-    border-color: $sandybrown;
+    border-color: var(--sandybrown);
   }
 
   .bor--goldenrod-s {
-    border-color: $goldenrod;
+    border-color: var(--goldenrod);
   }
 
   .bor--darkgoldenrod-s {
-    border-color: $darkgoldenrod;
+    border-color: var(--darkgoldenrod);
   }
 
   .bor--peru-s {
-    border-color: $peru;
+    border-color: var(--peru);
   }
 
   .bor--chocolate-s {
-    border-color: $chocolate;
+    border-color: var(--chocolate);
   }
 
   .bor--saddlebrown-s {
-    border-color: $saddlebrown;
+    border-color: var(--saddlebrown);
   }
 
   .bor--sienna-s {
-    border-color: $sienna;
+    border-color: var(--sienna);
   }
 
   .bor--brown-s {
-    border-color: $brown;
+    border-color: var(--brown);
   }
 
   .bor--maroon-s {
-    border-color: $maroon;
+    border-color: var(--maroon);
   }
 
   .bor--darkolivegreen-s {
-    border-color: $darkolivegreen;
+    border-color: var(--darkolivegreen);
   }
 
   .bor--olive-s {
-    border-color: $olive;
+    border-color: var(--olive);
   }
 
   .bor--olivedrab-s {
-    border-color: $olivedrab;
+    border-color: var(--olivedrab);
   }
 
   .bor--yellowgreen-s {
-    border-color: $yellowgreen;
+    border-color: var(--yellowgreen);
   }
 
   .bor--limegreen-s {
-    border-color: $limegreen;
+    border-color: var(--limegreen);
   }
 
   .bor--lime-s {
-    border-color: $lime;
+    border-color: var(--lime);
   }
 
   .bor--lawngreen-s {
-    border-color: $lawngreen;
+    border-color: var(--lawngreen);
   }
 
   .bor--chartreuse-s {
-    border-color: $chartreuse;
+    border-color: var(--chartreuse);
   }
 
   .bor--greenyellow-s {
-    border-color: $greenyellow;
+    border-color: var(--greenyellow);
   }
 
   .bor--springgreen-s {
-    border-color: $springgreen;
+    border-color: var(--springgreen);
   }
 
   .bor--medpringgreen-s {
-    border-color: $mediumspringgreen;
+    border-color: var(--mediumspringgreen);
   }
 
   .bor--lightgreen-s {
-    border-color: $lightgreen;
+    border-color: var(--lightgreen);
   }
 
   .bor--palegreen-s {
-    border-color: $palegreen;
+    border-color: var(--palegreen);
   }
 
   .bor--darkseagreen-s {
-    border-color: $darkseagreen;
+    border-color: var(--darkseagreen);
   }
 
   .bor--mediumseagreen-s {
-    border-color: $mediumseagreen;
+    border-color: var(--mediumseagreen);
   }
 
   .bor--seagreen-s {
-    border-color: $seagreen;
+    border-color: var(--seagreen);
   }
 
   .bor--forestgreen-s {
-    border-color: $forestgreen;
+    border-color: var(--forestgreen);
   }
 
   .bor--green-s {
-    border-color: $green;
+    border-color: var(--green);
   }
 
   .bor--darkgreen-s {
-    border-color: $darkgreen;
+    border-color: var(--darkgreen);
   }
 
   .bor--mediumaquamarine-s {
-    border-color: $mediumaquamarine;
+    border-color: var(--mediumaquamarine);
   }
 
   .bor--aqua-s {
-    border-color: $aqua;
+    border-color: var(--aqua);
   }
 
   .bor--cyan-s {
-    border-color: $cyan;
+    border-color: var(--cyan);
   }
 
   .bor--lightcyan-s {
-    border-color: $lightcyan;
+    border-color: var(--lightcyan);
   }
 
   .bor--paleturquoise-s {
-    border-color: $paleturquoise;
+    border-color: var(--paleturquoise);
   }
 
   .bor--aquamarine-s {
-    border-color: $aquamarine;
+    border-color: var(--aquamarine);
   }
 
   .bor--turquoise-s {
-    border-color: $turquoise;
+    border-color: var(--turquoise);
   }
 
   .bor--mediumturquoise-s {
-    border-color: $mediumturquoise;
+    border-color: var(--mediumturquoise);
   }
 
   .bor--darkturquoise-s {
-    border-color: $darkturquoise;
+    border-color: var(--darkturquoise);
   }
 
   .bor--lightseagreen-s {
-    border-color: $lightseagreen;
+    border-color: var(--lightseagreen);
   }
 
   .bor--cadetblue-s {
-    border-color: $cadetblue;
+    border-color: var(--cadetblue);
   }
 
   .bor--darkcyan-s {
-    border-color: $darkcyan;
+    border-color: var(--darkcyan);
   }
 
   .bor--teal-s {
-    border-color: $teal;
+    border-color: var(--teal);
   }
 
   .bor--lightsteelblue-s {
-    border-color: $lightsteelblue;
+    border-color: var(--lightsteelblue);
   }
 
   .bor--powderblue-s {
-    border-color: $powderblue;
+    border-color: var(--powderblue);
   }
 
   .bor--lightblue-s {
-    border-color: $lightblue;
+    border-color: var(--lightblue);
   }
 
   .bor--skyblue-s {
-    border-color: $skyblue;
+    border-color: var(--skyblue);
   }
 
   .bor--lightskyblue-s {
-    border-color: $lightskyblue;
+    border-color: var(--lightskyblue);
   }
 
   .bor--deepskyblue-s {
-    border-color: $deepskyblue;
+    border-color: var(--deepskyblue);
   }
 
   .bor--dodgerblue-s {
-    border-color: $dodgerblue;
+    border-color: var(--dodgerblue);
   }
 
   .bor--cornflowerblue-s {
-    border-color: $cornflowerblue;
+    border-color: var(--cornflowerblue);
   }
 
   .bor--steelblue-s {
-    border-color: $steelblue;
+    border-color: var(--steelblue);
   }
 
   .bor--royalblue-s {
-    border-color: $royalblue;
+    border-color: var(--royalblue);
   }
 
   .bor--blue-s {
-    border-color: $blue;
+    border-color: var(--blue);
   }
 
   .bor--mediumblue-s {
-    border-color: $mediumblue;
+    border-color: var(--mediumblue);
   }
 
   .bor--darkblue-s {
-    border-color: $darkblue;
+    border-color: var(--darkblue);
   }
 
   .bor--navy-s {
-    border-color: $navy;
+    border-color: var(--navy);
   }
 
   .bor--midnightblue-s {
-    border-color: $midnightblue;
+    border-color: var(--midnightblue);
   }
 
   .bor--lavender-s {
-    border-color: $lavender;
+    border-color: var(--lavender);
   }
 
   .bor--thistle-s {
-    border-color: $thistle;
+    border-color: var(--thistle);
   }
 
   .bor--plum-s {
-    border-color: $plum;
+    border-color: var(--plum);
   }
 
   .bor--violet-s {
-    border-color: $violet;
+    border-color: var(--violet);
   }
 
   .bor--orchid-s {
-    border-color: $orchid;
+    border-color: var(--orchid);
   }
 
   .bor--fuchsia-s {
-    border-color: $fuchsia;
+    border-color: var(--fuchsia);
   }
 
   .bor--magenta-s {
-    border-color: $magenta;
+    border-color: var(--magenta);
   }
 
   .bor--mediumorchid-s {
-    border-color: $mediumorchid;
+    border-color: var(--mediumorchid);
   }
 
   .bor--mediumpurple-s {
-    border-color: $mediumpurple;
+    border-color: var(--mediumpurple);
   }
 
   .bor--blueviolet-s {
-    border-color: $blueviolet;
+    border-color: var(--blueviolet);
   }
 
   .bor--darkviolet-s {
-    border-color: $darkviolet;
+    border-color: var(--darkviolet);
   }
 
   .bor--darkorchid-s {
-    border-color: $darkorchid;
+    border-color: var(--darkorchid);
   }
 
   .bor--darkmagenta-s {
-    border-color: $darkmagenta;
+    border-color: var(--darkmagenta);
   }
 
   .bor--purple-s {
-    border-color: $purple;
+    border-color: var(--purple);
   }
 
   .bor--indigo-s {
-    border-color: $indigo;
+    border-color: var(--indigo);
   }
 
   .bor--darkslateblue-s {
-    border-color: $darkslateblue;
+    border-color: var(--darkslateblue);
   }
 
   .bor--slateblue-s {
-    border-color: $slateblue;
+    border-color: var(--slateblue);
   }
 
   .bor--mediumslateblue-s {
-    border-color: $mediumslateblue;
+    border-color: var(--mediumslateblue);
   }
 
   .bor--white-s {
-    border-color: $white;
+    border-color: var(--white);
   }
 
   .bor--snow-s {
-    border-color: $snow;
+    border-color: var(--snow);
   }
 
   .bor--honeydew-s {
-    border-color: $honeydew;
+    border-color: var(--honeydew);
   }
 
   .bor--mintcream-s {
-    border-color: $mintcream;
+    border-color: var(--mintcream);
   }
 
   .bor--azure-s {
-    border-color: $azure;
+    border-color: var(--azure);
   }
 
   .bor--aliceblue-s {
-    border-color: $aliceblue;
+    border-color: var(--aliceblue);
   }
 
   .bor--ghostwhite-s {
-    border-color: $ghostwhite;
+    border-color: var(--ghostwhite);
   }
 
   .bor--whitesmoke-s {
-    border-color: $whitesmoke;
+    border-color: var(--whitesmoke);
   }
 
   .bor--seashell-s {
-    border-color: $seashell;
+    border-color: var(--seashell);
   }
 
   .bor--beige-s {
-    border-color: $beige;
+    border-color: var(--beige);
   }
 
   .bor--oldlace-s {
-    border-color: $oldlace;
+    border-color: var(--oldlace);
   }
 
   .bor--floralwhite-s {
-    border-color: $floralwhite;
+    border-color: var(--floralwhite);
   }
 
   .bor--ivory-s {
-    border-color: $ivory;
+    border-color: var(--ivory);
   }
 
   .bor--antiquewhite-s {
-    border-color: $antiquewhite;
+    border-color: var(--antiquewhite);
   }
 
   .bor--linen-s {
-    border-color: $linen;
+    border-color: var(--linen);
   }
 
   .bor--lavenderblush-s {
-    border-color: $lavenderblush;
+    border-color: var(--lavenderblush);
   }
 
   .bor--mistyrose-s {
-    border-color: $mistyrose;
+    border-color: var(--mistyrose);
   }
 
   .bor--gainsboro-s {
-    border-color: $gainsboro;
+    border-color: var(--gainsboro);
   }
 }
 
 @media screen and (width >= 48em) {
   .bor--blk-m {
-    border-color: $near-black;
+    border-color: var(--near-black);
   }
 
   .bor--dk-gry-m {
-    border-color: $dark-gray;
+    border-color: var(--dark-gray);
   }
 
   .bor--md-gry-m {
-    border-color: $mid-gray;
+    border-color: var(--mid-gray);
   }
 
   .bor--gray-m {
-    border-color: $gray;
+    border-color: var(--gray);
   }
 
   .bor--silver-m {
-    border-color: $silver;
+    border-color: var(--silver);
   }
 
   .bor--lt-slvr-m {
-    border-color: $light-silver;
+    border-color: var(--light-silver);
   }
 
   .bor--lt-gry-m {
-    border-color: $light-gray;
+    border-color: var(--light-gray);
   }
 
   .bor--near-wht-m {
-    border-color: $near-white;
+    border-color: var(--near-white);
   }
 
   .bor--wht-m {
-    border-color: $white;
+    border-color: var(--white);
   }
 
   .bor--pink-m {
-    border-color: $pink;
+    border-color: var(--pink);
   }
 
   .bor--lightpink-m {
-    border-color: $lightpink;
+    border-color: var(--lightpink);
   }
 
   .bor--hotpink-m {
-    border-color: $hotpink;
+    border-color: var(--hotpink);
   }
 
   .bor--deeppink-m {
-    border-color: $deeppink;
+    border-color: var(--deeppink);
   }
 
   .bor--palevioletred-m {
-    border-color: $palevioletred;
+    border-color: var(--palevioletred);
   }
 
   .bor--mediumvioletred-m {
-    border-color: $mediumvioletred;
+    border-color: var(--mediumvioletred);
   }
 
   .bor--lightsalmon-m {
-    border-color: $lightsalmon;
+    border-color: var(--lightsalmon);
   }
 
   .bor--salmon-m {
-    border-color: $salmon;
+    border-color: var(--salmon);
   }
 
   .bor--darksalmon-m {
-    border-color: $darksalmon;
+    border-color: var(--darksalmon);
   }
 
   .bor--lightcoral-m {
-    border-color: $lightcoral;
+    border-color: var(--lightcoral);
   }
 
   .bor--indianred-m {
-    border-color: $indianred;
+    border-color: var(--indianred);
   }
 
   .bor--crimson-m {
-    border-color: $crimson;
+    border-color: var(--crimson);
   }
 
   .bor--firebrick-m {
-    border-color: $firebrick;
+    border-color: var(--firebrick);
   }
 
   .bor--darkred-m {
-    border-color: $darkred;
+    border-color: var(--darkred);
   }
 
   .bor--red-m {
-    border-color: $red;
+    border-color: var(--red);
   }
 
   .bor--orangered-m {
-    border-color: $orangered;
+    border-color: var(--orangered);
   }
 
   .bor--tomato-m {
-    border-color: $tomato;
+    border-color: var(--tomato);
   }
 
   .bor--coral-m {
-    border-color: $coral;
+    border-color: var(--coral);
   }
 
   .bor--darkorange-m {
-    border-color: $darkorange;
+    border-color: var(--darkorange);
   }
 
   .bor--orange-m {
-    border-color: $orange;
+    border-color: var(--orange);
   }
 
   .bor--gold-m {
-    border-color: $gold;
+    border-color: var(--gold);
   }
 
   .bor--yellow-m {
-    border-color: $yellow;
+    border-color: var(--yellow);
   }
 
   .bor--lightyellow-m {
-    border-color: $lightyellow;
+    border-color: var(--lightyellow);
   }
 
   .bor--lemonchiffon-m {
-    border-color: $lemonchiffon;
+    border-color: var(--lemonchiffon);
   }
 
   .bor--lightgoldenrod-m {
-    border-color: $lightgoldenrodyellow;
+    border-color: var(--lightgoldenrodyellow);
   }
 
   .bor--papayawhip-m {
-    border-color: $papayawhip;
+    border-color: var(--papayawhip);
   }
 
   .bor--moccasin-m {
-    border-color: $moccasin;
+    border-color: var(--moccasin);
   }
 
   .bor--peachpuff-m {
-    border-color: $peachpuff;
+    border-color: var(--peachpuff);
   }
 
   .bor--palegoldenrod-m {
-    border-color: $palegoldenrod;
+    border-color: var(--palegoldenrod);
   }
 
   .bor--khaki-m {
-    border-color: $khaki;
+    border-color: var(--khaki);
   }
 
   .bor--darkkhaki-m {
-    border-color: $darkkhaki;
+    border-color: var(--darkkhaki);
   }
 
   .bor--cornsilk-m {
-    border-color: $cornsilk;
+    border-color: var(--cornsilk);
   }
 
   .bor--blanchedalmond-m {
-    border-color: $blanchedalmond;
+    border-color: var(--blanchedalmond);
   }
 
   .bor--bisque-m {
-    border-color: $bisque;
+    border-color: var(--bisque);
   }
 
   .bor--navajowhite-m {
-    border-color: $navajowhite;
+    border-color: var(--navajowhite);
   }
 
   .bor--wheat-m {
-    border-color: $wheat;
+    border-color: var(--wheat);
   }
 
   .bor--burlywood-m {
-    border-color: $burlywood;
+    border-color: var(--burlywood);
   }
 
   .bor--tan-m {
-    border-color: $tan;
+    border-color: var(--tan);
   }
 
   .bor--rosybrown-m {
-    border-color: $rosybrown;
+    border-color: var(--rosybrown);
   }
 
   .bor--sandybrown-m {
-    border-color: $sandybrown;
+    border-color: var(--sandybrown);
   }
 
   .bor--goldenrod-m {
-    border-color: $goldenrod;
+    border-color: var(--goldenrod);
   }
 
   .bor--darkgoldenrod-m {
-    border-color: $darkgoldenrod;
+    border-color: var(--darkgoldenrod);
   }
 
   .bor--peru-m {
-    border-color: $peru;
+    border-color: var(--peru);
   }
 
   .bor--chocolate-m {
-    border-color: $chocolate;
+    border-color: var(--chocolate);
   }
 
   .bor--saddlebrown-m {
-    border-color: $saddlebrown;
+    border-color: var(--saddlebrown);
   }
 
   .bor--sienna-m {
-    border-color: $sienna;
+    border-color: var(--sienna);
   }
 
   .bor--brown-m {
-    border-color: $brown;
+    border-color: var(--brown);
   }
 
   .bor--maroon-m {
-    border-color: $maroon;
+    border-color: var(--maroon);
   }
 
   .bor--darkolivegreen-m {
-    border-color: $darkolivegreen;
+    border-color: var(--darkolivegreen);
   }
 
   .bor--olive-m {
-    border-color: $olive;
+    border-color: var(--olive);
   }
 
   .bor--olivedrab-m {
-    border-color: $olivedrab;
+    border-color: var(--olivedrab);
   }
 
   .bor--yellowgreen-m {
-    border-color: $yellowgreen;
+    border-color: var(--yellowgreen);
   }
 
   .bor--limegreen-m {
-    border-color: $limegreen;
+    border-color: var(--limegreen);
   }
 
   .bor--lime-m {
-    border-color: $lime;
+    border-color: var(--lime);
   }
 
   .bor--lawngreen-m {
-    border-color: $lawngreen;
+    border-color: var(--lawngreen);
   }
 
   .bor--chartreuse-m {
-    border-color: $chartreuse;
+    border-color: var(--chartreuse);
   }
 
   .bor--greenyellow-m {
-    border-color: $greenyellow;
+    border-color: var(--greenyellow);
   }
 
   .bor--springgreen-m {
-    border-color: $springgreen;
+    border-color: var(--springgreen);
   }
 
   .bor--medpringgreen-m {
-    border-color: $mediumspringgreen;
+    border-color: var(--mediumspringgreen);
   }
 
   .bor--lightgreen-m {
-    border-color: $lightgreen;
+    border-color: var(--lightgreen);
   }
 
   .bor--palegreen-m {
-    border-color: $palegreen;
+    border-color: var(--palegreen);
   }
 
   .bor--darkseagreen-m {
-    border-color: $darkseagreen;
+    border-color: var(--darkseagreen);
   }
 
   .bor--mediumseagreen-m {
-    border-color: $mediumseagreen;
+    border-color: var(--mediumseagreen);
   }
 
   .bor--seagreen-m {
-    border-color: $seagreen;
+    border-color: var(--seagreen);
   }
 
   .bor--forestgreen-m {
-    border-color: $forestgreen;
+    border-color: var(--forestgreen);
   }
 
   .bor--green-m {
-    border-color: $green;
+    border-color: var(--green);
   }
 
   .bor--darkgreen-m {
-    border-color: $darkgreen;
+    border-color: var(--darkgreen);
   }
 
   .bor--mediumaquamarine-m {
-    border-color: $mediumaquamarine;
+    border-color: var(--mediumaquamarine);
   }
 
   .bor--aqua-m {
-    border-color: $aqua;
+    border-color: var(--aqua);
   }
 
   .bor--cyan-m {
-    border-color: $cyan;
+    border-color: var(--cyan);
   }
 
   .bor--lightcyan-m {
-    border-color: $lightcyan;
+    border-color: var(--lightcyan);
   }
 
   .bor--paleturquoise-m {
-    border-color: $paleturquoise;
+    border-color: var(--paleturquoise);
   }
 
   .bor--aquamarine-m {
-    border-color: $aquamarine;
+    border-color: var(--aquamarine);
   }
 
   .bor--turquoise-m {
-    border-color: $turquoise;
+    border-color: var(--turquoise);
   }
 
   .bor--mediumturquoise-m {
-    border-color: $mediumturquoise;
+    border-color: var(--mediumturquoise);
   }
 
   .bor--darkturquoise-m {
-    border-color: $darkturquoise;
+    border-color: var(--darkturquoise);
   }
 
   .bor--lightseagreen-m {
-    border-color: $lightseagreen;
+    border-color: var(--lightseagreen);
   }
 
   .bor--cadetblue-m {
-    border-color: $cadetblue;
+    border-color: var(--cadetblue);
   }
 
   .bor--darkcyan-m {
-    border-color: $darkcyan;
+    border-color: var(--darkcyan);
   }
 
   .bor--teal-m {
-    border-color: $teal;
+    border-color: var(--teal);
   }
 
   .bor--lightsteelblue-m {
-    border-color: $lightsteelblue;
+    border-color: var(--lightsteelblue);
   }
 
   .bor--powderblue-m {
-    border-color: $powderblue;
+    border-color: var(--powderblue);
   }
 
   .bor--lightblue-m {
-    border-color: $lightblue;
+    border-color: var(--lightblue);
   }
 
   .bor--skyblue-m {
-    border-color: $skyblue;
+    border-color: var(--skyblue);
   }
 
   .bor--lightskyblue-m {
-    border-color: $lightskyblue;
+    border-color: var(--lightskyblue);
   }
 
   .bor--deepskyblue-m {
-    border-color: $deepskyblue;
+    border-color: var(--deepskyblue);
   }
 
   .bor--dodgerblue-m {
-    border-color: $dodgerblue;
+    border-color: var(--dodgerblue);
   }
 
   .bor--cornflowerblue-m {
-    border-color: $cornflowerblue;
+    border-color: var(--cornflowerblue);
   }
 
   .bor--steelblue-m {
-    border-color: $steelblue;
+    border-color: var(--steelblue);
   }
 
   .bor--royalblue-m {
-    border-color: $royalblue;
+    border-color: var(--royalblue);
   }
 
   .bor--blue-m {
-    border-color: $blue;
+    border-color: var(--blue);
   }
 
   .bor--mediumblue-m {
-    border-color: $mediumblue;
+    border-color: var(--mediumblue);
   }
 
   .bor--darkblue-m {
-    border-color: $darkblue;
+    border-color: var(--darkblue);
   }
 
   .bor--navy-m {
-    border-color: $navy;
+    border-color: var(--navy);
   }
 
   .bor--midnightblue-m {
-    border-color: $midnightblue;
+    border-color: var(--midnightblue);
   }
 
   .bor--lavender-m {
-    border-color: $lavender;
+    border-color: var(--lavender);
   }
 
   .bor--thistle-m {
-    border-color: $thistle;
+    border-color: var(--thistle);
   }
 
   .bor--plum-m {
-    border-color: $plum;
+    border-color: var(--plum);
   }
 
   .bor--violet-m {
-    border-color: $violet;
+    border-color: var(--violet);
   }
 
   .bor--orchid-m {
-    border-color: $orchid;
+    border-color: var(--orchid);
   }
 
   .bor--fuchsia-m {
-    border-color: $fuchsia;
+    border-color: var(--fuchsia);
   }
 
   .bor--magenta-m {
-    border-color: $magenta;
+    border-color: var(--magenta);
   }
 
   .bor--mediumorchid-m {
-    border-color: $mediumorchid;
+    border-color: var(--mediumorchid);
   }
 
   .bor--mediumpurple-m {
-    border-color: $mediumpurple;
+    border-color: var(--mediumpurple);
   }
 
   .bor--blueviolet-m {
-    border-color: $blueviolet;
+    border-color: var(--blueviolet);
   }
 
   .bor--darkviolet-m {
-    border-color: $darkviolet;
+    border-color: var(--darkviolet);
   }
 
   .bor--darkorchid-m {
-    border-color: $darkorchid;
+    border-color: var(--darkorchid);
   }
 
   .bor--darkmagenta-m {
-    border-color: $darkmagenta;
+    border-color: var(--darkmagenta);
   }
 
   .bor--purple-m {
-    border-color: $purple;
+    border-color: var(--purple);
   }
 
   .bor--indigo-m {
-    border-color: $indigo;
+    border-color: var(--indigo);
   }
 
   .bor--darkslateblue-m {
-    border-color: $darkslateblue;
+    border-color: var(--darkslateblue);
   }
 
   .bor--slateblue-m {
-    border-color: $slateblue;
+    border-color: var(--slateblue);
   }
 
   .bor--mediumslateblue-m {
-    border-color: $mediumslateblue;
+    border-color: var(--mediumslateblue);
   }
 
   .bor--white-m {
-    border-color: $white;
+    border-color: var(--white);
   }
 
   .bor--snow-m {
-    border-color: $snow;
+    border-color: var(--snow);
   }
 
   .bor--honeydew-m {
-    border-color: $honeydew;
+    border-color: var(--honeydew);
   }
 
   .bor--mintcream-m {
-    border-color: $mintcream;
+    border-color: var(--mintcream);
   }
 
   .bor--azure-m {
-    border-color: $azure;
+    border-color: var(--azure);
   }
 
   .bor--aliceblue-m {
-    border-color: $aliceblue;
+    border-color: var(--aliceblue);
   }
 
   .bor--ghostwhite-m {
-    border-color: $ghostwhite;
+    border-color: var(--ghostwhite);
   }
 
   .bor--whitesmoke-m {
-    border-color: $whitesmoke;
+    border-color: var(--whitesmoke);
   }
 
   .bor--seashell-m {
-    border-color: $seashell;
+    border-color: var(--seashell);
   }
 
   .bor--beige-m {
-    border-color: $beige;
+    border-color: var(--beige);
   }
 
   .bor--oldlace-m {
-    border-color: $oldlace;
+    border-color: var(--oldlace);
   }
 
   .bor--floralwhite-m {
-    border-color: $floralwhite;
+    border-color: var(--floralwhite);
   }
 
   .bor--ivory-m {
-    border-color: $ivory;
+    border-color: var(--ivory);
   }
 
   .bor--antiquewhite-m {
-    border-color: $antiquewhite;
+    border-color: var(--antiquewhite);
   }
 
   .bor--linen-m {
-    border-color: $linen;
+    border-color: var(--linen);
   }
 
   .bor--lavenderblush-m {
-    border-color: $lavenderblush;
+    border-color: var(--lavenderblush);
   }
 
   .bor--mistyrose-m {
-    border-color: $mistyrose;
+    border-color: var(--mistyrose);
   }
 
   .bor--gainsboro-m {
-    border-color: $gainsboro;
+    border-color: var(--gainsboro);
   }
 }
 
 @media screen and (width >= 96em) {
   .bor--blk-l {
-    border-color: $near-black;
+    border-color: var(--near-black);
   }
 
   .bor--dk-gry-l {
-    border-color: $dark-gray;
+    border-color: var(--dark-gray);
   }
 
   .bor--md-gry-l {
-    border-color: $mid-gray;
+    border-color: var(--mid-gray);
   }
 
   .bor--gray-l {
-    border-color: $gray;
+    border-color: var(--gray);
   }
 
   .bor--silver-l {
-    border-color: $silver;
+    border-color: var(--silver);
   }
 
   .bor--lt-slvr-l {
-    border-color: $light-silver;
+    border-color: var(--light-silver);
   }
 
   .bor--lt-gry-l {
-    border-color: $light-gray;
+    border-color: var(--light-gray);
   }
 
   .bor--near-wht-l {
-    border-color: $near-white;
+    border-color: var(--near-white);
   }
 
   .bor--wht-l {
-    border-color: $white;
+    border-color: var(--white);
   }
 
   .bor--pink-l {
-    border-color: $pink;
+    border-color: var(--pink);
   }
 
   .bor--lightpink-l {
-    border-color: $lightpink;
+    border-color: var(--lightpink);
   }
 
   .bor--hotpink-l {
-    border-color: $hotpink;
+    border-color: var(--hotpink);
   }
 
   .bor--deeppink-l {
-    border-color: $deeppink;
+    border-color: var(--deeppink);
   }
 
   .bor--palevioletred-l {
-    border-color: $palevioletred;
+    border-color: var(--palevioletred);
   }
 
   .bor--mediumvioletred-l {
-    border-color: $mediumvioletred;
+    border-color: var(--mediumvioletred);
   }
 
   .bor--lightsalmon-l {
-    border-color: $lightsalmon;
+    border-color: var(--lightsalmon);
   }
 
   .bor--salmon-l {
-    border-color: $salmon;
+    border-color: var(--salmon);
   }
 
   .bor--darksalmon-l {
-    border-color: $darksalmon;
+    border-color: var(--darksalmon);
   }
 
   .bor--lightcoral-l {
-    border-color: $lightcoral;
+    border-color: var(--lightcoral);
   }
 
   .bor--indianred-l {
-    border-color: $indianred;
+    border-color: var(--indianred);
   }
 
   .bor--crimson-l {
-    border-color: $crimson;
+    border-color: var(--crimson);
   }
 
   .bor--firebrick-l {
-    border-color: $firebrick;
+    border-color: var(--firebrick);
   }
 
   .bor--darkred-l {
-    border-color: $darkred;
+    border-color: var(--darkred);
   }
 
   .bor--red-l {
-    border-color: $red;
+    border-color: var(--red);
   }
 
   .bor--orangered-l {
-    border-color: $orangered;
+    border-color: var(--orangered);
   }
 
   .bor--tomato-l {
-    border-color: $tomato;
+    border-color: var(--tomato);
   }
 
   .bor--coral-l {
-    border-color: $coral;
+    border-color: var(--coral);
   }
 
   .bor--darkorange-l {
-    border-color: $darkorange;
+    border-color: var(--darkorange);
   }
 
   .bor--orange-l {
-    border-color: $orange;
+    border-color: var(--orange);
   }
 
   .bor--gold-l {
-    border-color: $gold;
+    border-color: var(--gold);
   }
 
   .bor--yellow-l {
-    border-color: $yellow;
+    border-color: var(--yellow);
   }
 
   .bor--lightyellow-l {
-    border-color: $lightyellow;
+    border-color: var(--lightyellow);
   }
 
   .bor--lemonchiffon-l {
-    border-color: $lemonchiffon;
+    border-color: var(--lemonchiffon);
   }
 
   .bor--lightgoldenrod-l {
-    border-color: $lightgoldenrodyellow;
+    border-color: var(--lightgoldenrodyellow);
   }
 
   .bor--papayawhip-l {
-    border-color: $papayawhip;
+    border-color: var(--papayawhip);
   }
 
   .bor--moccasin-l {
-    border-color: $moccasin;
+    border-color: var(--moccasin);
   }
 
   .bor--peachpuff-l {
-    border-color: $peachpuff;
+    border-color: var(--peachpuff);
   }
 
   .bor--palegoldenrod-l {
-    border-color: $palegoldenrod;
+    border-color: var(--palegoldenrod);
   }
 
   .bor--khaki-l {
-    border-color: $khaki;
+    border-color: var(--khaki);
   }
 
   .bor--darkkhaki-l {
-    border-color: $darkkhaki;
+    border-color: var(--darkkhaki);
   }
 
   .bor--cornsilk-l {
-    border-color: $cornsilk;
+    border-color: var(--cornsilk);
   }
 
   .bor--blanchedalmond-l {
-    border-color: $blanchedalmond;
+    border-color: var(--blanchedalmond);
   }
 
   .bor--bisque-l {
-    border-color: $bisque;
+    border-color: var(--bisque);
   }
 
   .bor--navajowhite-l {
-    border-color: $navajowhite;
+    border-color: var(--navajowhite);
   }
 
   .bor--wheat-l {
-    border-color: $wheat;
+    border-color: var(--wheat);
   }
 
   .bor--burlywood-l {
-    border-color: $burlywood;
+    border-color: var(--burlywood);
   }
 
   .bor--tan-l {
-    border-color: $tan;
+    border-color: var(--tan);
   }
 
   .bor--rosybrown-l {
-    border-color: $rosybrown;
+    border-color: var(--rosybrown);
   }
 
   .bor--sandybrown-l {
-    border-color: $sandybrown;
+    border-color: var(--sandybrown);
   }
 
   .bor--goldenrod-l {
-    border-color: $goldenrod;
+    border-color: var(--goldenrod);
   }
 
   .bor--darkgoldenrod-l {
-    border-color: $darkgoldenrod;
+    border-color: var(--darkgoldenrod);
   }
 
   .bor--peru-l {
-    border-color: $peru;
+    border-color: var(--peru);
   }
 
   .bor--chocolate-l {
-    border-color: $chocolate;
+    border-color: var(--chocolate);
   }
 
   .bor--saddlebrown-l {
-    border-color: $saddlebrown;
+    border-color: var(--saddlebrown);
   }
 
   .bor--sienna-l {
-    border-color: $sienna;
+    border-color: var(--sienna);
   }
 
   .bor--brown-l {
-    border-color: $brown;
+    border-color: var(--brown);
   }
 
   .bor--maroon-l {
-    border-color: $maroon;
+    border-color: var(--maroon);
   }
 
   .bor--darkolivegreen-l {
-    border-color: $darkolivegreen;
+    border-color: var(--darkolivegreen);
   }
 
   .bor--olive-l {
-    border-color: $olive;
+    border-color: var(--olive);
   }
 
   .bor--olivedrab-l {
-    border-color: $olivedrab;
+    border-color: var(--olivedrab);
   }
 
   .bor--yellowgreen-l {
-    border-color: $yellowgreen;
+    border-color: var(--yellowgreen);
   }
 
   .bor--limegreen-l {
-    border-color: $limegreen;
+    border-color: var(--limegreen);
   }
 
   .bor--lime-l {
-    border-color: $lime;
+    border-color: var(--lime);
   }
 
   .bor--lawngreen-l {
-    border-color: $lawngreen;
+    border-color: var(--lawngreen);
   }
 
   .bor--chartreuse-l {
-    border-color: $chartreuse;
+    border-color: var(--chartreuse);
   }
 
   .bor--greenyellow-l {
-    border-color: $greenyellow;
+    border-color: var(--greenyellow);
   }
 
   .bor--springgreen-l {
-    border-color: $springgreen;
+    border-color: var(--springgreen);
   }
 
   .bor--medpringgreen-l {
-    border-color: $mediumspringgreen;
+    border-color: var(--mediumspringgreen);
   }
 
   .bor--lightgreen-l {
-    border-color: $lightgreen;
+    border-color: var(--lightgreen);
   }
 
   .bor--palegreen-l {
-    border-color: $palegreen;
+    border-color: var(--palegreen);
   }
 
   .bor--darkseagreen-l {
-    border-color: $darkseagreen;
+    border-color: var(--darkseagreen);
   }
 
   .bor--mediumseagreen-l {
-    border-color: $mediumseagreen;
+    border-color: var(--mediumseagreen);
   }
 
   .bor--seagreen-l {
-    border-color: $seagreen;
+    border-color: var(--seagreen);
   }
 
   .bor--forestgreen-l {
-    border-color: $forestgreen;
+    border-color: var(--forestgreen);
   }
 
   .bor--green-l {
-    border-color: $green;
+    border-color: var(--green);
   }
 
   .bor--darkgreen-l {
-    border-color: $darkgreen;
+    border-color: var(--darkgreen);
   }
 
   .bor--mediumaquamarine-l {
-    border-color: $mediumaquamarine;
+    border-color: var(--mediumaquamarine);
   }
 
   .bor--aqua-l {
-    border-color: $aqua;
+    border-color: var(--aqua);
   }
 
   .bor--cyan-l {
-    border-color: $cyan;
+    border-color: var(--cyan);
   }
 
   .bor--lightcyan-l {
-    border-color: $lightcyan;
+    border-color: var(--lightcyan);
   }
 
   .bor--paleturquoise-l {
-    border-color: $paleturquoise;
+    border-color: var(--paleturquoise);
   }
 
   .bor--aquamarine-l {
-    border-color: $aquamarine;
+    border-color: var(--aquamarine);
   }
 
   .bor--turquoise-l {
-    border-color: $turquoise;
+    border-color: var(--turquoise);
   }
 
   .bor--mediumturquoise-l {
-    border-color: $mediumturquoise;
+    border-color: var(--mediumturquoise);
   }
 
   .bor--darkturquoise-l {
-    border-color: $darkturquoise;
+    border-color: var(--darkturquoise);
   }
 
   .bor--lightseagreen-l {
-    border-color: $lightseagreen;
+    border-color: var(--lightseagreen);
   }
 
   .bor--cadetblue-l {
-    border-color: $cadetblue;
+    border-color: var(--cadetblue);
   }
 
   .bor--darkcyan-l {
-    border-color: $darkcyan;
+    border-color: var(--darkcyan);
   }
 
   .bor--teal-l {
-    border-color: $teal;
+    border-color: var(--teal);
   }
 
   .bor--lightsteelblue-l {
-    border-color: $lightsteelblue;
+    border-color: var(--lightsteelblue);
   }
 
   .bor--powderblue-l {
-    border-color: $powderblue;
+    border-color: var(--powderblue);
   }
 
   .bor--lightblue-l {
-    border-color: $lightblue;
+    border-color: var(--lightblue);
   }
 
   .bor--skyblue-l {
-    border-color: $skyblue;
+    border-color: var(--skyblue);
   }
 
   .bor--lightskyblue-l {
-    border-color: $lightskyblue;
+    border-color: var(--lightskyblue);
   }
 
   .bor--deepskyblue-l {
-    border-color: $deepskyblue;
+    border-color: var(--deepskyblue);
   }
 
   .bor--dodgerblue-l {
-    border-color: $dodgerblue;
+    border-color: var(--dodgerblue);
   }
 
   .bor--cornflowerblue-l {
-    border-color: $cornflowerblue;
+    border-color: var(--cornflowerblue);
   }
 
   .bor--steelblue-l {
-    border-color: $steelblue;
+    border-color: var(--steelblue);
   }
 
   .bor--royalblue-l {
-    border-color: $royalblue;
+    border-color: var(--royalblue);
   }
 
   .bor--blue-l {
-    border-color: $blue;
+    border-color: var(--blue);
   }
 
   .bor--mediumblue-l {
-    border-color: $mediumblue;
+    border-color: var(--mediumblue);
   }
 
   .bor--darkblue-l {
-    border-color: $darkblue;
+    border-color: var(--darkblue);
   }
 
   .bor--navy-l {
-    border-color: $navy;
+    border-color: var(--navy);
   }
 
   .bor--midnightblue-l {
-    border-color: $midnightblue;
+    border-color: var(--midnightblue);
   }
 
   .bor--lavender-l {
-    border-color: $lavender;
+    border-color: var(--lavender);
   }
 
   .bor--thistle-l {
-    border-color: $thistle;
+    border-color: var(--thistle);
   }
 
   .bor--plum-l {
-    border-color: $plum;
+    border-color: var(--plum);
   }
 
   .bor--violet-l {
-    border-color: $violet;
+    border-color: var(--violet);
   }
 
   .bor--orchid-l {
-    border-color: $orchid;
+    border-color: var(--orchid);
   }
 
   .bor--fuchsia-l {
-    border-color: $fuchsia;
+    border-color: var(--fuchsia);
   }
 
   .bor--magenta-l {
-    border-color: $magenta;
+    border-color: var(--magenta);
   }
 
   .bor--mediumorchid-l {
-    border-color: $mediumorchid;
+    border-color: var(--mediumorchid);
   }
 
   .bor--mediumpurple-l {
-    border-color: $mediumpurple;
+    border-color: var(--mediumpurple);
   }
 
   .bor--blueviolet-l {
-    border-color: $blueviolet;
+    border-color: var(--blueviolet);
   }
 
   .bor--darkviolet-l {
-    border-color: $darkviolet;
+    border-color: var(--darkviolet);
   }
 
   .bor--darkorchid-l {
-    border-color: $darkorchid;
+    border-color: var(--darkorchid);
   }
 
   .bor--darkmagenta-l {
-    border-color: $darkmagenta;
+    border-color: var(--darkmagenta);
   }
 
   .bor--purple-l {
-    border-color: $purple;
+    border-color: var(--purple);
   }
 
   .bor--indigo-l {
-    border-color: $indigo;
+    border-color: var(--indigo);
   }
 
   .bor--darkslateblue-l {
-    border-color: $darkslateblue;
+    border-color: var(--darkslateblue);
   }
 
   .bor--slateblue-l {
-    border-color: $slateblue;
+    border-color: var(--slateblue);
   }
 
   .bor--mediumslateblue-l {
-    border-color: $mediumslateblue;
+    border-color: var(--mediumslateblue);
   }
 
   .bor--white-l {
-    border-color: $white;
+    border-color: var(--white);
   }
 
   .bor--snow-l {
-    border-color: $snow;
+    border-color: var(--snow);
   }
 
   .bor--honeydew-l {
-    border-color: $honeydew;
+    border-color: var(--honeydew);
   }
 
   .bor--mintcream-l {
-    border-color: $mintcream;
+    border-color: var(--mintcream);
   }
 
   .bor--azure-l {
-    border-color: $azure;
+    border-color: var(--azure);
   }
 
   .bor--aliceblue-l {
-    border-color: $aliceblue;
+    border-color: var(--aliceblue);
   }
 
   .bor--ghostwhite-l {
-    border-color: $ghostwhite;
+    border-color: var(--ghostwhite);
   }
 
   .bor--whitesmoke-l {
-    border-color: $whitesmoke;
+    border-color: var(--whitesmoke);
   }
 
   .bor--seashell-l {
-    border-color: $seashell;
+    border-color: var(--seashell);
   }
 
   .bor--beige-l {
-    border-color: $beige;
+    border-color: var(--beige);
   }
 
   .bor--oldlace-l {
-    border-color: $oldlace;
+    border-color: var(--oldlace);
   }
 
   .bor--floralwhite-l {
-    border-color: $floralwhite;
+    border-color: var(--floralwhite);
   }
 
   .bor--ivory-l {
-    border-color: $ivory;
+    border-color: var(--ivory);
   }
 
   .bor--antiquewhite-l {
-    border-color: $antiquewhite;
+    border-color: var(--antiquewhite);
   }
 
   .bor--linen-l {
-    border-color: $linen;
+    border-color: var(--linen);
   }
 
   .bor--lavenderblush-l {
-    border-color: $lavenderblush;
+    border-color: var(--lavenderblush);
   }
 
   .bor--mistyrose-l {
-    border-color: $mistyrose;
+    border-color: var(--mistyrose);
   }
 
   .bor--gainsboro-l {
-    border-color: $gainsboro;
+    border-color: var(--gainsboro);
   }
 }
